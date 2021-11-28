@@ -1,0 +1,114 @@
+@charset "ISO-8859-1";
+body {
+	color: rgb(114 75 106) !important;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+*::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+.nav-item a {
+	color: rgb(114 75 106)!important;
+	font-size: 1.1rem;
+}
+
+.nav-item active {
+	color: rgb(114 75 106)!important;
+}
+
+.nav-item a:hover {
+	color: rgb(114 75 106)!important;
+	font-weight: 600;
+}
+
+.navbar {
+ 	background: rgba(255,255,255,.94);
+ 	box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 5%), inset 0 -1px 0 rgb(0 0 0 / 15%);
+}
+
+.navbar-brand {
+	margin-left: 10px;
+}
+
+.navbar-toggler-icon {
+	color: rgb(114 75 106);
+}
+
+.dropdown-menu {
+	background: rgb(250, 250, 250, 0.9);
+}
+
+.carousel-item img {
+	width: 100%;
+	height: 500px;
+}
+
+@media only screen and (max-width: 600px) {
+	.carousel-item img {
+		width: 100%;
+		height: 300px;
+	}
+}
+
+.carousel-text-box {
+	background: rgba(255,255,255,.30);
+	box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+
+.carousel-text-box p {
+	font-size: 1.2rem;
+}
+
+.col-lg-4 {
+	margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.avatar {
+	width: 140px !important;
+	height: 140px !important;
+	border-radius: 50%;
+	border: 3px solid rgb(8 7 7 / 30%);
+	object-fit: cover;
+}
+
+.feature-link {
+	text-decoration: none;
+	color: rgb(114 75 106);
+}
+
+.feature-link:hover {
+	font-weight: 600;
+	color: rgb(114 75 106);
+}
+
+.feature-img {
+	width: 100%;
+	height: 100%;
+	box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+
+.footer {
+	background-color: rgb(114 75 106 / 10%);
+}
+
+.footer p {
+	font-size: 0.9rem;
+}
+
+
+
+

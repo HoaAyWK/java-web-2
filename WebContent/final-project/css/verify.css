@@ -1,0 +1,168 @@
+*::-webkit-scrollbar {
+    width: 4px;
+    background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: #000;
+	border-radius: 3px;
+}
+
+*::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+*{
+	box-sizing:border-box;
+}
+body{
+	font-size:16px;
+	color:#dbe2fb;
+	line-height:28px;
+	font-family:"Open Sans", sans-serif;
+	overflow-x: hidden;
+}
+.bg_img{
+	background-size:cover;
+	background-position: center center;
+    background-repeat: no-repeat;
+}
+.container{
+	width:100%;
+	padding-left:15px;
+	padding-right:15px;
+	margin-right:auto;
+	margin-left:auto;
+}
+.padding-bottom{
+	padding-bottom:80px;
+}
+.padding-top{
+	padding-top:200px;
+}
+.account-area{
+	width:100%;
+    height:400px;
+	max-width:540px;
+	padding:60px 50px;
+	margin:0 auto;
+	background-color:rgba(68, 90, 153, 0.051);
+	box-shadow:0px 0px 29.4px 0.6px rgb(0 0 0 / 50%);
+}
+.section-header-3 .cate {
+    color:#31d7a9;
+    text-transform:uppercase;
+    display:block;
+    font-size:25px;
+    margin-bottom:10px;
+    margin-top:-8px;
+    font-weight:700;
+    margin-bottom:15px;
+}
+.section-header-3 .title {
+    margin-bottom:16px;
+    font-size:15px;
+}
+form {
+    display:block;
+    margin-top:30px;
+}
+.account-area .account-form .form-group {
+    margin-bottom:22px;
+}
+.account-area .account-form .form-group label {
+    margin-bottom:10px;
+    text-transform:uppercase;
+    color:rgba(255, 255, 255, 0.7);
+}
+label, button, select {
+    cursor:pointer;
+}
+label {
+    display:inline-block;
+    margin-bottom:0.5rem;
+}
+.account-area .account-form .form-group label span {
+    color:#f1481f;
+}
+label, button, select {
+    cursor:pointer;
+}
+.account-area .account-form .form-group input {
+    height:45px;
+    border-radius:0;
+    border:none;
+    border-bottom:1px solid #23334f;
+    padding-left:0;
+}
+input {
+    background:transparent;
+    border:1px solid #2d4186;
+    padding-left:10px;
+}
+input, button, select {
+    height:50px;
+    color:#dbe2fb;
+}
+select, input, textarea, button {
+    width:100%;
+    border:1px solid #2d4186;
+    outline:none;
+    border-radius:4px;
+}
+button, input {
+    overflow:visible;
+}
+button, input, optgroup, select, textarea {
+    font-family:inherit;
+    font-size:100%;
+    line-height:1.15;
+    margin:0;
+}
+.account-area .account-form .form-group.checkgroup {
+    -webkit-transform:translateY(-10px);
+    transform:translateY(-10px);
+}
+.account-area .account-form .form-group.checkgroup input {
+    width:16px;
+    height:0px;
+    border-radius:50%;
+    position:relative;
+}
+.account-area .account-form .form-group.checkgroup label {
+    color:#6d7bba;
+    font-size:14px;
+    max-width:calc(100% - 15px);
+    padding-left:5px;
+    margin-bottom:0;
+    margin-right:auto;
+    text-transform:capitalize;
+}
+.account-area .account-form .form-group.checkgroup label a {
+    color:#31d7a9;
+}
+account-area .account-form .form-group {
+    margin-bottom:22px;
+}
+.text-center {
+    text-align:center!important;
+}
+.form-group {
+    margin-bottom:1rem;
+}
+.account-area .account-form .form-group input[type="submit"] {
+    background-image:-webkit-linear-gradient(
+169deg, #5560ff 17%, #aa52a1 63%, #ff4343 100%);
+    -webkit-transition:all ease 0.3s;
+    transition:all ease 0.3s;
+    border-radius:30px;
+    width:auto;
+    padding:0 50px;
+    height:50px;
+    text-transform:uppercase;
+    margin:30px auto;
+}

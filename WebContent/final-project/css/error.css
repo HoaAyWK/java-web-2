@@ -1,0 +1,16 @@
+@media (max-width: 1199px) {
+	.section-404 .thumb-404 {
+    	max-width: 500px;
+	}
+}
+
+@media (max-width: 1399px) {
+	.section-404 .thumb-404 {
+	    max-width: 720px;
+	}
+}
+
+.section-404 .thumb-404 {
+    max-width: 720px;
+    margin: 0 auto 34px;
+}
