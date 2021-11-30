@@ -66,4 +66,19 @@ public class ShowtimeDAO {
 		
 		return showtimes;
 	}
+	
+	public List<Showtime> getAllShowtimes() {
+		List<Showtime> showtimes = new ArrayList<Showtime>();
+		MongoCursor<Document> cursor = this.collection.find().iterator();
+		try {
+			while (cursor.hasNext()) {
+				Document doc = cursor.next();
+				showtimes.add(ShowtimeConverter.toShowtime(doc));
+			}
+		} finally {
+			cursor.close();
+		}
+		
+		return showtimes;
+	}
 }

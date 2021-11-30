@@ -13,16 +13,21 @@ public class Account implements Serializable {
 	private String email;
 	private String username;
 	private String password;
+	private String phone;
+	private String address;
 	private boolean isAdmin;
 	
 	public Account() {};
-	public Account(String id, String email, String username, String password, String code, boolean isAdmin) {
+	public Account(String id, String email, String username, String password, 
+			String code, String phone, String address, boolean isAdmin) {
 		this.id = id;
 		this.email = email;
 		this.password = password;
 		this.code = code;
 		this.isAdmin = isAdmin;
 		this.username = username;
+		this.phone = phone;
+		this.address = address;
 	}
 	
 	public void setId(String id) {
@@ -39,6 +44,14 @@ public class Account implements Serializable {
 	
 	public void setPassword(String password) {
 		this.password = password;
+	}
+	
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+	
+	public void setAddress(String address) {
+		this.address = address;
 	}
 	
 	public void setIsAdmin(boolean isAdmin) {
@@ -63,6 +76,14 @@ public class Account implements Serializable {
 	
 	public String getPassword() {
 		return password;
+	}
+	
+	public String getPhone() {
+		return phone;
+	}
+	
+	public String getAddress() {
+		return address;
 	}
 	
 	public boolean getIsAdmin() {

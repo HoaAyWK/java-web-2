@@ -26,6 +26,7 @@ import com.stripe.net.RequestOptions;
 import com.stripe.param.PaymentIntentCreateParams;
 import com.stripe.param.checkout.SessionCreateParams;
 
+import fp.business.Account;
 import fp.business.Cart;
 import fp.business.Cinema;
 import fp.business.Reservation;
@@ -69,6 +70,7 @@ public class CreditCardServlet extends HttpServlet {
 		
 		ReservationDAO reservationDao = new ReservationDAO(mongo);
 		ShowtimeDAO showtimeDao = new ShowtimeDAO(mongo);
+		CinemaDAO cinemaDao = new CinemaDAO(mongo);
 				
 		String movieId = request.getParameter("movieId");
 		String seats = request.getParameter("seats");
@@ -128,7 +130,18 @@ public class CreditCardServlet extends HttpServlet {
 			}
 			
 			if (isAvailable) {
-			
+				HttpSession session = request.getSession();
+				
+				Account account = (Account) session.getAttribute("account");
+				String username = "";
+				String email = "";
+				if (account == null) {
+					url = "/final-project/cancel-payment.jsp";
+				} else {
+					username = account.getUsername();
+					email = account.getEmail();
+				}
+				
 				Reservation reservation = new Reservation();
 				Date date = new Date();
 				int total = seatsChoice.size();
@@ -140,9 +153,9 @@ public class CreditCardServlet extends HttpServlet {
 				reservation.setSeats(seatsChoice);
 				reservation.setTicketPrice(price);
 				reservation.setTotal(total);
-				reservation.setShowtimeId(showtime.getId());
-				reservation.setUsername("iovay");
-				reservation.setEmail("iovay@gmail.com");
+				reservation.setCinemaId(showtime.getCinemaId());
+				reservation.setUsername(username);
+				reservation.setEmail(email);
 							
 			    
 				Map<String, Object> params = new HashMap<>();
@@ -167,7 +180,7 @@ public class CreditCardServlet extends HttpServlet {
 					int seatsAvaiable = showtime.getSeatsAvailable() - total;
 					showtime.setSeats(cinemaSeats); showtime.setSeatsAvailable(seatsAvaiable);
 					showtimeDao.update(showtime);
-					HttpSession session = request.getSession();
+					
 					Cart cart = (Cart) session.getAttribute("cart");
 					cart.removeTicket(movieId, showtimeId);
 					System.out.println(cart.getTickets().size());

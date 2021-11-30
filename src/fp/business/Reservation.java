@@ -13,7 +13,7 @@ public class Reservation implements Serializable {
 	private double ticketPrice;
 	private int total;
 	private String movieId;
-	private String showtimeId;
+	private String cinemaId;
 	private String username;
 	private String email;
 	
@@ -21,7 +21,7 @@ public class Reservation implements Serializable {
 	public Reservation() {};
 	
 	public Reservation(String id, String startAt, Date date, ArrayList<ArrayList<Integer>> seats, double ticketPrice,
-			int total, String movieId, String showtimeId, String username, String email) {
+			int total, String movieId, String cinemaId, String username, String email) {
 		this.id = id;
 		this.startAt = startAt;
 		this.date = date;
@@ -29,7 +29,7 @@ public class Reservation implements Serializable {
 		this.ticketPrice = ticketPrice;
 		this.total = total;
 		this.movieId = movieId;
-		this.showtimeId = showtimeId;
+		this.cinemaId = cinemaId;
 		this.username = username;
 		this.email = email;
 	}
@@ -90,12 +90,12 @@ public class Reservation implements Serializable {
 		return movieId;
 	}
 	
-	public void setShowtimeId(String cinemaId) {
-		this.showtimeId = cinemaId;
+	public void setCinemaId(String cinemaId) {
+		this.cinemaId = cinemaId;
 	}
 	
-	public String getShowtimeId() {
-		return showtimeId;
+	public String getCinemaId() {
+		return cinemaId;
 	}
 	
 	public void setUsername(String username) {

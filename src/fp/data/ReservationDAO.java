@@ -62,4 +62,18 @@ public class ReservationDAO {
 		}
 		return reservations;
 	}
+	
+	public List<Reservation> getAllReservations() {
+		List<Reservation> reservations = new ArrayList<Reservation>();
+		MongoCursor<Document> cursor = collection.find().iterator();
+		try {
+			while (cursor.hasNext()) {
+				Document doc = cursor.next();
+				reservations.add(ReservationConverter.toReservation(doc));
+			}
+		} finally {
+			cursor.close();
+		}
+		return reservations;
+	}
 }

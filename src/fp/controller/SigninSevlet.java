@@ -66,8 +66,10 @@ public class SigninSevlet extends HttpServlet {
 			String accPassword = account.getPassword();
 				
 			if (password.equals(accPassword)) {
-									
-				url = "/movietickets";
+				
+				if (account.getIsAdmin() == false)
+					url = "/movietickets";
+				else url = "/admin";
 				HttpSession session = request.getSession();
 				boolean validAccount = true;
 				session.removeAttribute("validAccount");

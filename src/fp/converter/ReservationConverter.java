@@ -19,8 +19,8 @@ public class ReservationConverter {
 		reservation.setTotal(doc.getInteger("total"));
 		ObjectId movieId = doc.getObjectId("movieId");
 		reservation.setMovieId(movieId.toString());
-		ObjectId showtimeId = doc.getObjectId("showtimeId");
-		reservation.setShowtimeId(showtimeId.toString());
+		ObjectId cinemaId = doc.getObjectId("cinemaId");
+		reservation.setCinemaId(cinemaId.toString());
 		reservation.setUsername(doc.getString("username"));
 		reservation.setEmail(doc.getString("email"));
 		ObjectId id = doc.getObjectId("_id");
@@ -35,7 +35,7 @@ public class ReservationConverter {
 				.append("ticketPrice", reservation.getTicketPrice())
 				.append("total", reservation.getTotal())
 				.append("movieId", new ObjectId(reservation.getMovieId()))
-				.append("showtimeId", new ObjectId(reservation.getShowtimeId()))
+				.append("cinemaId", new ObjectId(reservation.getCinemaId()))
 				.append("username", reservation.getUsername())
 				.append("email", reservation.getEmail());
 		if (reservation.getId() != null) {

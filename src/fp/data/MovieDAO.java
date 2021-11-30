@@ -49,6 +49,11 @@ public class MovieDAO {
 		return MovieConverter.toMovie(doc);
 	}
 	
+	public Movie getMovieByName(String name) {
+		Document doc = this.collection.find(Filters.eq("title", name)).first();
+		return MovieConverter.toMovie(doc);
+	}
+	
 	public List<Movie> getMovies() {
 		List<Movie> movies = new ArrayList<Movie>();
 		MongoCursor<Document> cursor = collection.find().iterator();
