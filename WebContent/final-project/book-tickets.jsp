@@ -9,7 +9,6 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="shortcut icon" type="image/png/x-icon" href="<c:url value='/assets/favicon/popcorn-favicon.ico'/>">
 	<script src="https://kit.fontawesome.com/d99e1d4bab.js"></script>
-	<link href="<c:url value='/final-project/css/nice-select1.css'/>" rel="stylesheet"/>
 	<link href="<c:url value='/final-project/css/book1.css'/>" rel="stylesheet"/>
 </head>
 <body>

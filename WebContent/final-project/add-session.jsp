@@ -76,7 +76,7 @@
 									<div class="mb-2">
 										<label class="form-label" for="title">Movie Name</label>
 										<select class="form-select" name="movieName">
-											<c:forEach var="movie" items="movies" varStatus="loop">
+											<c:forEach var="movie" items="${movies}" varStatus="loop">
 												<c:if test="${loop.index == 0}">
 													<option selected>${movie.title}</option>
 												</c:if>
@@ -89,7 +89,7 @@
 									<div class="mb-2">
 										<label class="form-label" for="imgPath">Cinema</label>
 										<select class="form-select" name="cinemaName">
-											<c:forEach var="cinema" items="cinemas" varStatus="loop">
+											<c:forEach var="cinema" items="${cinemas}" varStatus="loop">
 												<c:if test="${loop.index == 0}">
 													<option selected>${cinema.name}</option>
 												</c:if>

@@ -29,7 +29,7 @@
 		</a></li>
 		<li><a href="<c:url value='/admin/cinemas'/>"
 			class="nav-link text-white"> <i
-				class="fas fa-user-alt me-2 bi"></i> Cinemas
+				class="fas fa-video me-2 bi"></i> Cinemas
 		</a></li>
 		<li><a href="<c:url value='/admin/sessions'/>" class="nav-link text-white">
 				<i class="fas fa-clipboard-list me-2 bi"></i> Sessions

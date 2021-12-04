@@ -75,7 +75,7 @@
 									<thead>
 										<tr class="table-dark">
 											<th>No.</th>
-											<th>Account</th>
+											<th>Name</th>
 											<th>Email</th>											
 											<th>Movie</th>
 											<th>Cinema</th>

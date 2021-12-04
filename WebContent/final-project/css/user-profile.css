@@ -1,0 +1,156 @@
+*::-webkit-scrollbar {
+    width: 4px;
+    background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: #000;
+	border-radius: 3px;
+}
+
+*::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+body {
+	color: #fff;
+	background: rgb(8 3 37 / 96%);
+}
+
+.dropdown-menu {
+	left: -5rem!important;
+	background: rgb(8 3 37 / 70%);
+}
+
+.dropdown-menu li {
+	padding-top: 0.2rem;
+	padding-bottom: 0.2rem;
+}
+
+.dropdown-menu li:hover {
+	background: rgb(8 3 37 / 90%)!important;
+}
+
+.dropdown-menu li a {
+	text-decoration: none;
+	padding: 1rem;
+}
+
+
+.navbar {
+	background: rgb(8 3 37 / 40%)!important;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1020;
+	width: 100%;
+}
+
+a {
+	color: #fff!important;
+}
+
+.change-bg {
+	background-color: rgb(8 3 37 / 95%)!important;
+}
+
+@media only screen and (max-width: 992px) {
+	.dropdown-menu {
+		left: 1rem!important;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.dropdown-menu {
+		left: 1rem!important;
+	}
+	.banner-section {
+		padding: 220px 0 140px;
+	}
+}
+
+.bg-img {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.details-banner {
+	position: relative;
+}
+
+.hero-area {
+	padding-top: 120px;
+	padding-bottom: 60px;
+}
+
+.details-banner-wrapper {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+}
+
+.details-banner .hero-area .details-banner-wrapper .detals-banner-content {
+	text-align: center;
+}
+
+.details-banner .hero-area .details-banner-wrapper .detals-banner-content .title {
+	text-transform: capitalize;
+	font-weight: 600;
+}
+
+.page-title {
+	padding: 40px 0;
+	border-top: 1px solid #17305f;
+	border-bottom: 1px solid #17305f;
+}
+
+.bg-one {
+	background: #032055;
+}
+
+.page-title-area {
+	display: flex;
+	justify-content: center;
+	margin: 0 -15px -20px;
+	align-items: center;
+}
+
+.page-title-area .item {
+	margin: 0 15px 20px;
+}
+
+.page-title-area .date-item {
+	display: flex;
+	align-items: center;
+}
+
+.page-title-area .date-item .select-bar .list li:hover, .page-title-area .date-item .select-bar .list li.selected {
+    background: #001232;
+}
+
+.page-title-area .date-item .select-bar .list li {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.profile-info {
+	background: rgb(34 69 94 / 80%);
+}
+
+.footer {
+	background-color: rgb(8 3 37)!important;
+}
+
+.footer .horizontal-line {
+	border-bottom: 1px solid #495057!important;
+}
+
+.footer p {
+	font-size: 0.9rem;
+}

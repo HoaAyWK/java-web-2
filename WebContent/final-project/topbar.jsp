@@ -19,16 +19,18 @@
 	    		<a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" 
 	    			role="button" data-bs-toggle="dropdown" aria-expanded="false">${account.username}</a>
 	    		<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	    			<li><a href="#">Sign Out</a></li>
+	    			<li class="ps-2"><a href="<c:url value='/movietickets/profile'/>">Profile</a></li>
+	    			<li class="ps-2"><a href="<c:url value='/movietickets/signout'/>">Sign Out</a></li>
 	    		</ul>
 	    	</c:if>
 	    	<c:if test="${validAccount == false || validAccount == null}">
-	    		<a href="<c:url value='/movietickets/signin'/>" 
+	    		<a href="<c:url value='/movietickets/signin'/>" class="nav-link">Sign In</a>
+	    		<%-- <a href="<c:url value='/movietickets/signin'/>" 
 	    			class="nav-link dropdown-toggle" id="navbarDropdown" 
 	    			role="button" data-bs-toggle="dropdown" aria-expanded="false">Sign In</a>
 	    		<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 		    		<li><a href="<c:url value='/movietickets/signup'/>">Sign Up</a></li>	    			
-	    		</ul>
+	    		</ul> --%>
 	    	</c:if>
     	</div>
     </div>

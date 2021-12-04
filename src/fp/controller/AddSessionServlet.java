@@ -21,7 +21,7 @@ import fp.data.ShowtimeDAO;
 /**
  * Servlet implementation class AddSessionServlet
  */
-@WebServlet("/AddSessionServlet")
+@WebServlet(name = "AddSessionServlet", urlPatterns = {"/admin/sessions/add"})
 public class AddSessionServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

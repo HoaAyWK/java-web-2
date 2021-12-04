@@ -16,7 +16,7 @@
 			style="">
 			<li><a class="dropdown-item" href="<c:url value='/admin/admin-profile'/>">Profile</a></li>
 			<li><hr class="dropdown-divider"></li>
-			<li><a class="dropdown-item" href="#">Sign out</a></li>
+			<li><a class="dropdown-item" href="<c:url value='/movietickets/signout'/>">Sign out</a></li>
 		</ul>
 	</div>
 </div>

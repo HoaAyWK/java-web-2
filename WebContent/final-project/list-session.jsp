@@ -95,7 +95,7 @@
 											<tr>
 												<td>${loop.count}.</td>
 												<td class="fw-bold"><c:out value="${lstMovieName.get(loop.index)}"/></td>	
-												<td><c:out value="${lstCinemaName.get(loop.index}"/></td>
+												<td><c:out value="${lstCinemaName.get(loop.index)}"/></td>
 												<td><c:out value="${showtime.start}"/></td>	
 												<td><c:out value="${showtime.end}"/></td>
 												<td>${showtime.date}</td>
