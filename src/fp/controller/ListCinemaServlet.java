@@ -42,7 +42,7 @@ public class ListCinemaServlet extends HttpServlet {
 		
 		request.setAttribute("cinemas", cinemas);
 		
-		getServletContext().getRequestDispatcher("/final-project/list-cinema.jsp")
+		getServletContext().getRequestDispatcher("/final-project/admin/list-cinema.jsp")
 			.forward(request, response);;
 	}
 
@@ -58,12 +58,12 @@ public class ListCinemaServlet extends HttpServlet {
 		String action = request.getParameter("action");
 		String id = request.getParameter("id");
 		
-		String url = "/final-project/list-cinema.jsp";
+		String url = "/final-project/admin/list-cinema.jsp";
 		
 		if (action.equals("edit")) {
 			Cinema cinema = cinemaDao.getCinema(id);
 			request.setAttribute("cinema", cinema);
-			url = "/final-project/edit-cinema.jsp";
+			url = "/final-project/admin/edit-cinema.jsp";
 			
 		}
 		

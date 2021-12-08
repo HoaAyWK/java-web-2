@@ -48,7 +48,7 @@ public class AddSessionServlet extends HttpServlet {
 		
 		request.setAttribute("movies", movies);
 		request.setAttribute("cinemas", cinemas);
-		getServletContext().getRequestDispatcher("/final-project/add-session.jsp").forward(request, response);
+		getServletContext().getRequestDispatcher("/final-project/admin/add-session.jsp").forward(request, response);
 	}
 
 	/**
@@ -82,7 +82,7 @@ public class AddSessionServlet extends HttpServlet {
 		
 		showtimeDao.create(showtime);
 		
-		response.sendRedirect("/java-web/admin/sessions");
+		response.sendRedirect("/admin/sessions");
 		
 	}
 

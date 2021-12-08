@@ -44,7 +44,7 @@ public class AdminProfileServlet extends HttpServlet {
 		
 		request.setAttribute("account", info);
 		
-		getServletContext().getRequestDispatcher("/final-project/admin-profile.jsp").forward(request, response);
+		getServletContext().getRequestDispatcher("/final-project/admin/admin-profile.jsp").forward(request, response);
 	}
 
 	/**

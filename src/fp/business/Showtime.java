@@ -8,8 +8,9 @@ public class Showtime implements Serializable {
 	private String id;
 	private String start;
 	private String end;
-	private ArrayList<ArrayList<Boolean>> seats;
-	private int seatsAvailable;
+	private ArrayList<ArrayList<Boolean>> seats;    // [0][0] = false : free 
+													// [0][1] = true : booked
+	private int seatsAvailable;					   	
 	private String date;
 	private String movieId;
 	private String cinemaId;

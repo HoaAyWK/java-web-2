@@ -9,7 +9,9 @@ public class Reservation implements Serializable {
 	private String id;
 	private String startAt;
 	private Date date;
-	private ArrayList<ArrayList<Integer>> seats;
+	private ArrayList<ArrayList<Integer>> seats;	// [0][0] = 0 : row 0	[0][1] = 2 : column 2
+													// [1][0] = 1 : row 1	[0][4] = 1 : column 1
+	
 	private double ticketPrice;
 	private int total;
 	private String movieId;

@@ -20,7 +20,7 @@ public class MongoDBContextListener implements ServletContextListener {
 	@Override
 	public void contextInitialized(ServletContextEvent sce) {
 		try {
-			ConnectionString connectionString = new ConnectionString(Secret.getMongoUrl()); // replace Secret.getUrlSecret() with your connection string
+			ConnectionString connectionString = new ConnectionString("mongodb+srv://iovay:1matkhauquayeu...@java-web.ds1uw.mongodb.net/java-web?retryWrites=true&w=majority"); // replace Secret.getUrlSecret() with your connection string
 			MongoClientSettings settings = MongoClientSettings.builder()
 					.applyConnectionString(connectionString)
 					.build();

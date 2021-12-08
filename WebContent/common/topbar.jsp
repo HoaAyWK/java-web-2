@@ -27,7 +27,7 @@
 			        	</ul>
 			      	</li>
 			      	<li class="nav-item">
-			      		<a class="nav-link" href="<c:url value='/final-project'/>" target="_blank">Final Project</a>
+			      		<a class="nav-link" href="<c:url value='movietickets'/>" target="_blank">Final Project</a>
 			      	</li>
 			    </ul>
 		     </div>

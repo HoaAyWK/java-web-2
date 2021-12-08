@@ -12,7 +12,7 @@
 	<script src="https://kit.fontawesome.com/d99e1d4bab.js"></script>
 </head>
 	<body>
-		<%@ include file="topbar.jsp" %>
+		<%@ include file="/final-project/layouts/topbar.jsp" %>
 		<section class="banner-section">
 			<div class="banner-bg bg-img bg-fixed" data-background="<c:url value='/assets/images/banner.jpg'/>" style="background-image: url(<c:url value='/assets/images/banner.jpg'/>)">
 			</div>
@@ -89,7 +89,7 @@
 				</div>
 			</div>
 		</section>
-		<%@ include file="footer.jsp" %>
+		<%@ include file="/final-project/layouts/footer.jsp" %>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" ></script>
 		<script src="assets/js/topbar-scroll.js"></script>
 	</body>

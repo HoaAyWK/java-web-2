@@ -32,7 +32,7 @@ public class AddMovieServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		getServletContext().getRequestDispatcher("/final-project/add-movie.jsp").forward(request, response);
+		getServletContext().getRequestDispatcher("/final-project/admin/add-movie.jsp").forward(request, response);
 	}
 
 	/**
@@ -74,7 +74,7 @@ public class AddMovieServlet extends HttpServlet {
 		
 		movieDao.create(movie);
 		
-		response.sendRedirect("/java-web/admin/movies");
+		response.sendRedirect("/admin/movies");
 		
 	}
 

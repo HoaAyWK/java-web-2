@@ -34,7 +34,7 @@ public class AddCinemaServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		getServletContext().getRequestDispatcher("/final-project/add-cinema.jsp").forward(request, response);
+		getServletContext().getRequestDispatcher("/final-project/admin/add-cinema.jsp").forward(request, response);
 	}
 
 	/**
@@ -67,7 +67,7 @@ public class AddCinemaServlet extends HttpServlet {
 		
 		cinemaDao.create(cinema);
 		
-		response.sendRedirect("/java-web/admin/cinemas");
+		response.sendRedirect("/admin/cinemas");
 	}
 
 }

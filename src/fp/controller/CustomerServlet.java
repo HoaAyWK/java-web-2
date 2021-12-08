@@ -51,7 +51,7 @@ public class CustomerServlet extends HttpServlet {
 		
 		request.setAttribute("accounts", users);
 		
-		getServletContext().getRequestDispatcher("/final-project/customers.jsp")
+		getServletContext().getRequestDispatcher("/final-project/admin/customers.jsp")
 			.forward(request, response);
 	}
 
@@ -83,7 +83,7 @@ public class CustomerServlet extends HttpServlet {
 		}
 		
 		request.setAttribute("accounts", users);
-		getServletContext().getRequestDispatcher("/final-project/customers.jsp")
+		getServletContext().getRequestDispatcher("/final-project/admin/customers.jsp")
 		.forward(request, response);
 	}
 

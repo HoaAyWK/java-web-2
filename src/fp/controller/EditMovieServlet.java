@@ -74,7 +74,7 @@ public class EditMovieServlet extends HttpServlet {
 		
 		movieDao.update(movie);
 		
-		response.sendRedirect("/java-web/admin/movies");
+		response.sendRedirect("/admin/movies");
 	}
 
 }

@@ -62,7 +62,7 @@ public class OrdersServlet extends HttpServlet {
 		request.setAttribute("lstMovieName", lstMovieName);
 		request.setAttribute("reservations", reservations);
 		
-		getServletContext().getRequestDispatcher("/final-project/orders.jsp").forward(request, response);		
+		getServletContext().getRequestDispatcher("/final-project/admin/orders.jsp").forward(request, response);		
 	}
 
 	/**
@@ -79,7 +79,7 @@ public class OrdersServlet extends HttpServlet {
 		String action = request.getParameter("action");
 		String id = request.getParameter("id");
 		
-		String url = "/final-project/orders.jsp";
+		String url = "/final-project/admin/orders.jsp";
 		
 		if (action.equals("delete")) {
 			reservationDao.delete(id);						

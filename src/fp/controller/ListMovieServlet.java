@@ -42,7 +42,7 @@ public class ListMovieServlet extends HttpServlet {
 		
 		request.setAttribute("movies", movies);
 		
-		getServletContext().getRequestDispatcher("/final-project/list-movie.jsp")
+		getServletContext().getRequestDispatcher("/final-project/admin/list-movie.jsp")
 			.forward(request, response);
 	}
 
@@ -57,10 +57,10 @@ public class ListMovieServlet extends HttpServlet {
 		
 		String action = request.getParameter("action");
 		String id = request.getParameter("id");
-		String url = "/final-project/list-movie.jsp";
+		String url = "/final-project/admin/list-movie.jsp";
 		
 		if (action == null) {
-			url = "/final-project/list-movie.jsp";
+			url = "/final-project/admin/list-movie.jsp";
 			
 			List<Movie> movies = movieDao.getMovies();
 			request.setAttribute("movies", movies);
@@ -68,7 +68,7 @@ public class ListMovieServlet extends HttpServlet {
 		} else if (action.equals("edit")) {
 			Movie movie = movieDao.getMovie(id);
 			request.setAttribute("movie", movie);
-			url = "/final-project/edit-movie.jsp";
+			url = "/final-project/admin/edit-movie.jsp";
 			
 		} else if (action.equals("delete")) {
 			//movieDao.delete(id);

@@ -36,7 +36,7 @@ public class EditAdminServlet extends HttpServlet {
 		HttpSession session = request.getSession();
 		Account account = (Account) session.getAttribute("account");
 		request.setAttribute("account", account);
-		getServletContext().getRequestDispatcher("/final-project/edit-admin-profile.jsp")
+		getServletContext().getRequestDispatcher("/final-project/admin/edit-admin-profile.jsp")
 			.forward(request, response);
 	}
 
@@ -62,7 +62,7 @@ public class EditAdminServlet extends HttpServlet {
 		accountDao.update(account);
 		
 		session.setAttribute("account", account);
-		response.sendRedirect("/java-web/admin/admin-profile");
+		response.sendRedirect("/admin/admin-profile");
 	}
 
 }

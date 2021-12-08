@@ -62,7 +62,7 @@ public class MovieSessionsServlet extends HttpServlet {
 		request.setAttribute("lstMovieName", lstMovieName);
 		request.setAttribute("showtimes", showtimes);
 		
-		getServletContext().getRequestDispatcher("/final-project/list-session.jsp").forward(request, response);
+		getServletContext().getRequestDispatcher("/final-project/admin/list-session.jsp").forward(request, response);
 	}
 
 	/**
@@ -76,7 +76,7 @@ public class MovieSessionsServlet extends HttpServlet {
 		MovieDAO movieDao = new MovieDAO(mongo);
 		CinemaDAO cinemaDao = new CinemaDAO(mongo);
 		
-		String url = "/final-project/list-session.jsp";
+		String url = "/final-project/admin/list-session.jsp";
 		
 		String action = request.getParameter("action");
 		String id = request.getParameter("id");

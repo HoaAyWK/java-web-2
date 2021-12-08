@@ -35,7 +35,7 @@ public class AdminServlet extends HttpServlet {
 		String url = "";
 		if (account == null) url = "/movietickets";
 		else if (account.getIsAdmin() == false) url = "/movietickets";
-		else url = "/final-project/admin.jsp";
+		else url = "/final-project/admin/admin.jsp";
 		getServletContext().getRequestDispatcher(url).forward(request, response);
 	}
 

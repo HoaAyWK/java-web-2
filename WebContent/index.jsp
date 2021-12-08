@@ -88,7 +88,7 @@
 			<hr class="featurette-divider">
 			<div class="row featurette">
 				<div class="col-md-7">
-					<a href="<c:url value='/final-project'/>" class="feature-link" target="_blank">
+					<a href="<c:url value='/movietickets'/>" class="feature-link" target="_blank">
 						<h2>Final Project</h2>
 					</a>
 					<p class="lead">Movie Tickets Online Booking</p>
